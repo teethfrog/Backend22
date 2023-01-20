@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dennis Back-end template</title>
+    <title>Alexander Back-end template</title>
     <link rel="stylesheet" href="../style.css">
     <script src="./script.js" defer></script>
 </head>
@@ -31,6 +31,11 @@
 
         <!-- Sektionen omringar artiklar (eg. blogposts)-->
         <section>
+
+            <?php
+                /* Uppg 1 - Systemareorna och superglobals */
+                print("<p> Servern snurrar på port " . $_SERVER['REMOTE_PORT'] . ", som vanligt med https och apache");
+            ?>
 
             <!-- Artiklar placerar sig snyggt nedanför varann-->
             <article>

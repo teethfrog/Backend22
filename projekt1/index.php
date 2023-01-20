@@ -32,10 +32,27 @@
         <!-- Sektionen omringar artiklar (eg. blogposts)-->
         <section>
 
-            <?php
-                /* Uppg 1 - Systemareorna och superglobals */
-                print("<p> Servern snurrar på port " . $_SERVER['REMOTE_PORT'] . ", som vanligt med https och apache");
-            ?>
+            <article>
+                <h1> Uppgift 1 </h1>
+                <?php
+                    /* Uppg 1 - Systemareorna och superglobals */
+                    print("<p> Servern snurrar på port " . $_SERVER['REMOTE_PORT'] . ", som vanligt med https och apache");
+                ?>
+            </article>
+
+            <article>
+                <h1> Uppgift 2 </h1>
+                <?php
+                    /* Uppg 2 - Systemareorna och superglobals */
+                    $datum = date("d.M.Y");
+                    print("Dagens datum är " .$datum);
+                    // Arrays
+                    $veckodagar = array("Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag", "Söndag");
+                    print("</p> Idag är det veckodag nummer: " . $veckodagar[date("4")] . "</p>");
+
+                ?>
+            </article>
+
 
             <!-- Artiklar placerar sig snyggt nedanför varann-->
             <article>
